@@ -1,0 +1,235 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="./styles/landing-page.css">
+    <link rel="stylesheet" href="./styles/buttons.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/progress-bar.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/action-covers.css">
+    <link rel="stylesheet" href="./styles/steps.css">
+    <link rel="stylesheet" href="./styles/top-navigation.css">
+
+    <script src="./js/mobile-signup-button.js"></script>
+    <script src="./js/read-more.js"></script>
+
+  </head>
+
+  <body>
+    <nav class="top-navigation">
+      <a href="https://www.greenpeace.org">
+        <img
+          src="./assets/gp-logo.svg"
+          alt="Greenpeace"
+        />
+      </a>
+      <div class="language-selector">
+        <span class="language-option active">En</span>
+        <span class="language-option">Fr</span>
+      </div>
+    </nav>
+    <div class="landing-page">
+      <div class="fixed-sign-up-button hidden">
+        <a href="#petition-form" type="button" class="button primary full-width">
+          Sign petition
+        </a>
+      </div>
+      <div class="page-content">
+        <h1 class="page-title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </h1>
+        <img class="page-image" src='./assets/image-placeholder.svg' />
+        <p class="page-summary">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac ipsum ornare, consectetur purus sed,
+          mollis sem. In sed massa eu tellus semper dapibus non aliquet eros.
+        </p>
+        <h2 class="page-subtitle">Subtitle goes here</h2>
+        <p class="page-description">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris et
+          dui nec augue volutpat finibus. Phasellus laoreet quam et eros sagittis, id placerat dui porta.
+          Nullam consectetur justo non mattis viverra. Etiam vitae erat leo. Etiam eleifend ornare purus ut imperdiet.
+          Morbi nec orci sed mauris aliquet tincidunt. Etiam ac lacinia erat, id vulputate justo. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus. In finibus odio in malesuada dictum.
+          Proin in placerat est, ut euismod turpis. Orci varius natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Nulla facilisi. Mauris consectetur, arcu et elementum blandit, urna magna porttitor
+          ligula, non condimentum nisl libero at arcu. Fusce sollicitudin nisl et neque condimentum condimentum.
+          Proin non enim eu risus pulvinar sodales at nec orci.
+        </p>
+        <button type="button" class="button secondary read-more-button hidden">
+          Read more
+        </button>
+      </div>
+      <form id="petition-form" class="petition-form">
+        <h1>
+          Sign this petition
+        </h1>
+        <div class="progress-bar">
+          <p class="progress-bar-title">98,411 supporters</p>
+          <div class="progress-bar-total">
+            <div class="progress-bar-completed" style="width: 20%;"></div>
+          </div>
+          <p class="progress-bar-description">51,589 needed to reach 150,000</p>
+        </div>
+        <div class="recent-sign-ups">
+          <p><strong>Name</strong> signed the petiton 2 min ago</p>
+          <p><strong>Name</strong> signed the petiton 5 min ago</p>
+        </div>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="email" placeholder="Email" />
+        <input type="tel" placeholder="Phone number" />
+        <select required>
+          <option value="" selected disabled>Select a country</option>
+          <option value="fr">France</option>
+          <option value="nl">Nederland</option>
+          <option value="be">Belgium</option>
+        </select>
+        <div>
+          <input type="checkbox">
+          <span>I am happy to receive email updates from Greenpeace about important campaigns. Read our <a href="https://www.greenpeace.org/privacy">privacy policy</a></span>
+        </div>
+        <div>
+          <input type="radio">
+          <span>Display my name?</span>
+        </div>
+        <button type="submit">
+          Sign petition
+        </button>
+      </form>
+    </div>
+    <div class="thank-you-page">
+      <div class="step">
+        <div class="step-number checked">
+          <img src='./assets/white-check.svg' />
+        </div>
+        <p class="step-title">Name, thank you for signing the petition!</p>
+        <p class="step-description">You’re one of x people to sign this petition. Here are other ways you can help this petition make a change</p>
+      </div>
+      <div class="step">
+        <div class="step-number">
+          2
+        </div>
+        <p class="step-title">Share to boost your global impact</p>
+        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in nibh est. Integer tincidunt dolor nec mattis molestie.</p>
+        <div class="share-buttons">
+          <a href="#" class="share-button facebook">
+            <img src="./assets/facebook.svg" />
+          </a>
+          <a href="#" class="share-button twitter">
+            <img src="./assets/twitter.svg" />
+          </a>
+          <a href="#" class="share-button whatsapp">
+            <img src="./assets/whatsapp.svg" />
+          </a>
+          <a href="#" class="share-button email">
+            <img src="./assets/email.svg" />
+          </a>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">
+          3
+        </div>
+        <p class="step-title">Take more actions</p>
+        <p class="step-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in nibh est. Integer tincidunt dolor nec mattis molestie.</p>
+      </div>
+      <div class="action-covers-container">
+        <div class="action-covers">
+          <div class="action-cover">
+            <img src="./assets/image-placeholder.svg" />
+            <div class="action-cover-content">
+              <span class="action-cover-tag">Card tag</span>
+              <p class="action-cover-title">Make a donation</p>
+              <p class="action-cover-description">Lorem ipsum dolor sit amet, consectetuer</p>
+              <div class="action-cover-button-container">
+                <button type="button" class="button primary action-cover-button">Button text</button>
+              </div>
+            </div>
+          </div>
+          <div class="action-cover">
+            <img src="./assets/image-placeholder.svg" />
+            <div class="action-cover-content">
+              <span class="action-cover-tag">Card tag</span>
+              <p class="action-cover-title">Make a donation</p>
+              <p class="action-cover-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed do elusmod tempor.</p>
+              <div class="action-cover-button-container">
+                <button type="button" class="button primary action-cover-button">Button text</button>
+              </div>
+            </div>
+          </div>
+          <div class="action-cover">
+            <img src="./assets/image-placeholder.svg" />
+            <div class="action-cover-content">
+              <span class="action-cover-tag">Card tag</span>
+              <p class="action-cover-title">Make a donation</p>
+              <p class="action-cover-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed do elusmod tempor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed do elusmod tempor.</p>
+              <div class="action-cover-button-container">
+                <button type="button" class="button primary action-cover-button">Button text</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-section country-selector">
+        <img src='./assets/gp-logo-white.svg' />
+        <span>Greenpeace International</span>
+      </div>
+      <div class="bottom-footer">
+        <div class="footer-section social-media">
+          <span class="follow-us">Follow us</span>
+          <div class="icons">
+            <a href="#"><img src='./assets/instagram.svg' /></a>
+            <a href="#"><img src='./assets/youtube.svg' /></a>
+            <a href="#"><img src='./assets/facebook.svg' /></a>
+            <a href="#"><img src='./assets/twitter.svg' /></a>
+            <a href="#"><img src='./assets/linkedin.svg' /></a>
+            <a href="#"><img src='./assets/github.svg' /></a>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <ul>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <li>
+              <a href="#">Jobs</a>
+            </li>
+            <li>
+              <a href="#">Press center</a>
+            </li>
+            <li>
+              <a href="#">Archives</a>
+            </li>
+            <li>
+              <a href="#">Privacy & cookies</a>
+            </li>
+            <li>
+              <a href="#">Community policy</a>
+            </li>
+            <li>
+              <a href="#">Copyright</a>
+            </li>
+            <li>
+              <a href="#">Terms</a>
+            </li>
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <img src='./assets/copyright.svg' />
+        <span>Greenpeace International 2021</span>
+        <p class="license">Unless otherwise stated, the copy of the website is licensed under a CC-BY International License</p>
+      </div>
+    </footer>
+  </body>
+</html>

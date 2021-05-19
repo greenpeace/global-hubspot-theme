@@ -1,0 +1,111 @@
+.action-covers-container {
+  overflow-x: scroll;
+}
+
+.action-covers {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+  padding: 0 16px 16px 16px;
+}
+
+.action-cover {
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.16);
+  width: 250px;
+  min-width: 250px;
+  position: relative;
+  cursor: pointer;
+}
+
+.action-cover:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.action-cover:not(:last-child) {
+  margin-inline-end: 16px;
+}
+
+.action-cover img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.action-cover-content {
+  padding: 24px 24px 64px 24px;
+}
+
+.action-cover-tag {
+  color: #979797;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.action-cover-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: black;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.action-cover-title:hover {
+  text-decoration: underline;
+}
+
+.action-cover-description {
+  font-family: "Lora", serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-top: 0;
+}
+
+.action-cover-button {
+  font-size: 14px;
+  padding: 11px 22px;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+}
+
+@media (min-width: 768px) {
+  .action-covers {
+    padding: 0 36px 16px 36px;
+  }
+
+  .action-cover {
+    width: 280px;
+    min-width: 280px;
+  }
+
+  .action-cover:not(:last-child) {
+    margin-inline-end: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .action-covers {
+    padding: 0 162px 16px 162px;
+  }
+
+  .action-cover {
+    width: 356px;
+    min-width: 356px;
+  }
+
+  .action-cover-title {
+    font-size: 20px;
+  }
+}

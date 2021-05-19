@@ -1,0 +1,140 @@
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.landing-page {
+  margin: 60px auto 0 auto;
+  padding: 32px 16px;
+  color: #020202;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  max-width: 288px;
+}
+
+.page-image {
+  height: 140px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.page-title {
+  font-size: 22px;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.page-summary,
+.page-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.page-summary {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+.page-subtitle {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.page-description {
+  font-size: 16px;
+  font-family: "Lora", serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.recent-sign-ups {
+  color: #979797;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.recent-sign-ups p:not(:first-child) {
+  background-color: #979797;
+  background-image: linear-gradient(180deg, #FFFFFF 25.93%, rgba(255, 255, 255, 0) 126.88%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.button.read-more-button.hidden {
+  display: none;
+}
+
+.thank-you-page {
+  padding-top: 32px;
+  color: #020202;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .landing-page {
+    padding: 32px 36px;
+    display: flex;
+    max-width: 768px;
+    box-sizing: border-box;
+  }
+
+  .fixed-sign-up-button {
+    display: none;
+  }
+
+  .page-image {
+    height: 180px;
+  }
+
+  .button.read-more-button {
+    display: none;
+  }
+
+  .page-content {
+    max-width: 55%;
+    margin-inline-end: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing-page {
+    padding: 48px 64px;
+    max-width: 1024px;
+  }
+
+  .page-title {
+    font-size: 40px;
+  }
+
+  .page-image {
+    height: 315px;
+  }
+
+  .page-summary,
+  .page-subtitle {
+    font-size: 22px;
+  }
+
+  .page-description {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .landing-page {
+    padding: 48px 162px;
+    max-width: 1440px;
+  }
+}

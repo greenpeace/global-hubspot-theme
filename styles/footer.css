@@ -1,0 +1,159 @@
+footer {
+  width: 100vw;
+  background: #074365;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-section {
+  margin: 0 24px;
+  padding: 24px 0;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.footer-section.country-selector {
+  border-bottom: 1px solid white;
+}
+
+.footer-section.country-selector img {
+  vertical-align: bottom;
+  margin-inline-end: 16px;
+}
+
+.footer-section.country-selector span:after {
+  content: '';
+  background-image: url('../assets/chevron-white.svg');
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-inline-start: 16px;
+}
+
+.footer-section.social-media {
+  border-bottom: 1px solid white;
+}
+
+.footer-section.social-media .follow-us {
+  display: none;
+}
+
+.footer-section.social-media .icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-section.social-media .icons a {
+  margin-inline-end: 24px;
+}
+
+.footer-section.links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section.links li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.footer-section.links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section.links li a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  padding: 16px 24px;
+  font-size: 12px;
+  line-height: 1.25;
+  background: #05324c;
+  font-weight: 400;
+}
+
+.copyright img {
+  vertical-align: bottom;
+  margin-inline-end: 5px;
+}
+
+@media (min-width: 768px) {
+  .footer-section {
+    margin: 0 40px;
+    padding: 32px 0;
+  }
+
+  .copyright {
+    padding: 16px 40px;
+  }
+
+  .footer-section.links ul {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-section.country-selector,
+  .bottom-footer {
+    margin: 0 64px;
+    padding: 32px 0;
+  }
+
+  .copyright {
+    padding: 24px 64px;
+  }
+
+  .bottom-footer {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+  }
+
+  .footer-section.social-media,
+  .footer-section.links {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-section.social-media .follow-us {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+  }
+
+  .copyright .license {
+    border-inline-start: 1px solid white;
+    padding-inline-start: 16px;
+    margin-inline-start: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .footer-section.links {
+    flex: 1;
+  }
+
+  .footer-section.links ul {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer-section.country-selector,
+  .bottom-footer {
+    margin: 0 165px;
+  }
+
+  .copyright {
+    padding: 24px 165px;
+  }
+}

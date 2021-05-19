@@ -1,0 +1,66 @@
+.step {
+  text-align: center;
+  padding: 0 16px;
+  max-width: 288px;
+  margin: auto;
+}
+
+.step:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.step-number {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  border: 2px solid #66cc00;
+  margin: auto;
+  color: #66cc00;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.step-number.checked {
+  background: #66cc00;
+}
+
+.step-number.checked img {
+  height: 64px;
+  object-fit: none;
+  width: 64px;
+}
+
+.step-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 16px 0;
+}
+
+.step-description {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .step {
+    max-width: 456px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .step {
+    max-width: 736px;
+  }
+
+  .step-title {
+    font-size: 40px;
+  }
+}

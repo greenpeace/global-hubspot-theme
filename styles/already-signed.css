@@ -1,0 +1,48 @@
+.already-signed.mobile {
+  margin-top: 32px;
+}
+
+.already-signed .date img {
+  margin-inline-end: 12px;
+}
+
+.already-signed .date span {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.already-signed h2 {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.already-signed.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .already-signed.mobile {
+    display: none;
+  }
+
+  .already-signed.desktop {
+    display: block;
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .already-signed .date span {
+    font-size: 20px;
+  }
+  
+  .already-signed h2 {
+    font-size: 28px;
+  }
+
+  .already-signed .share-buttons {
+    justify-content: flex-start;
+  }
+}
